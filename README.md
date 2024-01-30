@@ -92,9 +92,42 @@ Mimari modeller nedir?
 - View: Kullanıcının isteğine cevap verilen arayüzdür. 
 - Controller: İsteğin ilk geldiği ve isteğe uygun işlemleri yapan yani uygun metodu çağırarak işlemleri yapan yer burasıdır.
 
-HTTP Nedir?
+HTTP nedir?
 
-HTTP (Hyper Text Transfer Protokol), protokolü ağ üzerinden web sayfalarının görüntülenmesini sağlayan TCP/IP tabanlı bir iletişim protokolüdür. Bağlantı noktası olarak TCP 80 portu kullanılır.
+- HTTP (Hyper Text Transfer Protokol), protokolü ağ üzerinden web sayfalarının görüntülenmesini sağlayan TCP/IP tabanlı bir iletişim protokolüdür. Bağlantı noktası olarak TCP 80 portu kullanılır.
 
+HTTPS nedir?
 
+- Gelen 'S' takısı verilerin şifrelendiğini ve bağlantının güvenli olduğunu ifade eder.
+
+HTTP nasıl çalışır?
+
+- ![HTTP Nasıl Çalışır](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/59dc6978-a75b-409b-b65b-f64ae8e9f574)
+
+HTTP durum kodları nelerdir?
+
+- Durum kodlarında 1’den 5’e kadar gruplandırılmıştır.
+- 1xx     Bilgi
+- 2xx     Başarı
+- 3xx     Yönlendirme
+- 4xx     Tarayıcı Hatası
+- 5xx     Sunucu Hatası
+
+HTTP istek yapısı nasıldır?
+
+- Bir istek verb, header ve content şeklinde iletilir. Verb tarafında, HTTP Metotları (Get, Post, Put, Head, Search, Delete, Patch, Connect, Options, Trace) yer alıyor. Header tarafında, üst (meta) bilgiler (type, lenght, authorization, accept, cookies vb.) yer alıyor. Conten tarafında ise istekle ilgili içerik (HTML, CSS, XML, JSON vb.) yer alıyor.
+- Bir cevap status code, header ve content şeklinde iletilir. Status code kısmında durum kodları (404, 502 vb.) yer alıyor. Header tarafında (type, lenght, expires vb.) yer alıyor. Content kısmında (HTML, CSS, XML, JSON, API türleri vb.) yer alıyor.
+
+HTTP metotları nelerdir?
+
+- GET: Belirtilen URI'deki kaynağı almak için kullanılır. Sunucu, istemciye belirtilen URI'deki kaynağı yanıtlar.
+- POST: Belirtilen URI'ye yeni bir kaynak eklemek veya mevcut bir kaynağı güncellemek için kullanılır. POST verileri genellikle HTTP isteği gövdesinde taşınır.
+- PUT: Belirtilen URI'ye yeni bir kaynak eklemek veya mevcut bir kaynağı güncellemek için kullanılır. Ancak, PUT genellikle tam bir kaynağı yüklerken kullanılır.
+- DELETE: Belirtilen URI'deki kaynağı silmek için kullanılır.
+- PATCH: Belirtilen URI'deki kaynağın kısmi bir güncellemesini yapmak için kullanılır. Yani, kaynağın sadece belirli bir bölümünü değiştirir.
+- HEAD: GET metoduyla aynıdır, ancak sunucu sadece başlık bilgilerini döner ve asıl içeriği göndermez. Genellikle bir kaynağın varlığını kontrol etmek için kullanılır.
+- OPTIONS: Belirtilen URI'deki kaynağa uygulanan HTTP metotlarını sorgulamak için kullanılır. Sunucu, desteklenen metotları ve diğer özellikleri içeren bir yanıt döner.
+- TRACE: Bir isteğin sunucuya ulaşma yolunu belirlemek için kullanılır. Ancak, güvenlik nedenleriyle genellikle devre dışı bırakılır.
+- CONNECT: Sunucuyla güvenli bir bağlantı kurmak için kullanılır, genellikle SSL/TLS ile birlikte kullanılır.
+- SEARCH: Bir dizinin altındaki kaynakları sorgulamak için kullanılır.
 
