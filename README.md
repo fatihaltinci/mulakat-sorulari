@@ -52,7 +52,7 @@ EF için ORM Modelleme yaklaşımları nelerdir?
 
 - LINQ (Language Integreated Query), sorgu özelliklerini doğrudan C# diliyle tümleştirmeye dayalı bir dizi teknolojinin adıdır. LINQ, veri kaynaklarından veri sorgulamayı kolaylaştırmak için kullanılır.
 
-[SOLID Prensipleri nedir?](http://cagataykiziltan.net/solid-prensipleri/) -> Burda güzel örnekle ile ifade edilmiş. @cagataykiziltan
+[SOLID Prensipleri nedir?](http://cagataykiziltan.net/solid-prensipleri/) -> Burda güzel örnekler ile ifade edilmiş. @cagataykiziltan
 
 - Solid Yazılım Prensipleri, yazılım geliştirme sürecinde kullanılması önerilen temel prensiplerdir ve yazılımın kalitesini ve bakımını kolaylaştırmak için tasarlanmıştır. Böylelikle yazılım modülleri ve sınıflar daha anlaşılır, test edilebilir, değiştirilebilir ve bakımı kolay hale gelir.
 - (S)ingle Responsibility Principle (SRP: Tek Sorumluluk Prensibi): Bu prensipte savunulan görüş her sınıfın tek bir sorumluluğu taşımaları gerektiğidir.
@@ -69,7 +69,7 @@ Mimari modeller nedir?
 
 - Mimari modeller denenmiş ve test edilmiş iyi tasarım deneyimlerinin kalıplarıdır. Yazılım mimarisi bir sistemi oluşturan parçaların bir bütün halde nasıl tasarlandığını ve aralarındaki etkileşimin nasıl olduğunu açıklar.
 
-Yaygın mimari modeller nelerdir?
+[Yaygın mimari modeller nelerdir?](https://www.arakatman.com/yazilim-mimarisi-ve-mimari-modeller/) -> Burda modelleri güzel bir şekilde açıklamış. 
 
 - Model-View-Controller Yazılım Mimarisi (MVC Architecture)
 - Katmanlı Yazılım Mimarisi (Layered Architecture)
@@ -78,4 +78,23 @@ Yaygın mimari modeller nelerdir?
 - Depo Yazılım Mimarisi (Repository Architecture)
 - Servis Odaklı Mimari (Service Oriented Architecture)
 - Mikroservis Mimarisi (Microservice Architecture)
+
+[MVC Nedir?](https://learn.microsoft.com/tr-tr/aspnet/core/mvc/overview?view=aspnetcore-8.0)
+
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/34b35daa-3318-4fa3-a146-c715776df55a)
+- Buradaki grafik üstünde akışı anlatacak olursam: Son kullanıcı bir browser arayıcılığıyla etkileşime geçerek bir istekte bulunur ve bu Controller tarafına gider. Controller burda adından da anlaşılacağı gibi kontrolcü görevdedir ve bu isteğe uygun veriyi Model'den talep eder ve veriyi alır. Değişiklikleri yaptıktan sonra (uygun metot çağrıldıktan sonra) bu veriyi View'a gönderir ve gerekli response kullanıcıya View tarafında iletilir.
+- Yaşam döngüsü şu şekildedir:
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/1c598373-6f18-4f18-8da4-f13b86699de5)
+- ASP.NET Core MVC için bütün istek işlem şeması şu şekilde:
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/5c8087f2-17e5-40e9-84ae-e20dae322225)
+- MVC'nin gelen istekleri karşılarken uyguladığı farklı yaklaşımlar var. Page Controller ve Front Controller. Bu yaklaşımları anlatan güzel bir yazı var: [MVC, MVP ve MVVM Patternleri](https://denizirgin.com/mvc-mvp-ve-mvvm-patternleri-aa7d1011daff). -> @denizirgin_3389 | Özetle:
+- Model: Veritabanıyla bağlantı yapılan yerdir. İsteğe göre gerekli veri işlemleri burda olur.
+- View: Kullanıcının isteğine cevap verilen arayüzdür. 
+- Controller: İsteğin ilk geldiği ve isteğe uygun işlemleri yapan yani uygun metodu çağırarak işlemleri yapan yer burasıdır.
+
+HTTP Nedir?
+
+HTTP (Hyper Text Transfer Protokol), protokolü ağ üzerinden web sayfalarının görüntülenmesini sağlayan TCP/IP tabanlı bir iletişim protokolüdür. Bağlantı noktası olarak TCP 80 portu kullanılır.
+
+
 
