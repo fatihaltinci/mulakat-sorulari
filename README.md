@@ -131,3 +131,31 @@ HTTP metotları nelerdir?
 - CONNECT: Sunucuyla güvenli bir bağlantı kurmak için kullanılır, genellikle SSL/TLS ile birlikte kullanılır.
 - SEARCH: Bir dizinin altındaki kaynakları sorgulamak için kullanılır.
 
+API nedir?
+
+- API (Application Programming Interface), tümleşik web uygulamaları geliştirmek ve kurmak için bir dizi tanım ve protokollerden oluşan bir uygulama programlama arayüzüdür. API ürü ya da servisin, uygulama detayları ve teknoloji tercihlerinden bağımsız başka ürün ya da servislerle iletişim kurmasına olanak sağlar.
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/5e392ab4-7b7d-406f-9049-d3805245ebf1)
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/72f6399e-08a9-42c8-8cc1-7d94ddce0e4d)
+
+SOAP nedir?
+
+- SOAP (Simple Object Access Protocol) HTTP protoklü üzerinden XML tabanlı nesne erişim protokolüdür. SOAP web servislere yapılması gerekenler hakkında bilgi içeren bir zarf yapısı göndererek çalışır.
+
+REST nedir?
+
+- REST (Representational State Transfer) sunucu ve istemci arasında veri alışverini HTTP protokolü üzerinden sağlayan mimari modeldir. Veri iletişimini JSON, HTML, XLT gibi çeşitli biçimlerde sağlayabilir. Ancak genelde JSON tercih edilir.
+
+RESTful nedir?
+
+- RESTful veya RESTful API, REST mimarisiyle hazırlanmış web servislerini ifade ediyor.
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/f6d28f16-7232-42d3-bc8b-acaf862e2948)
+- ![image](https://github.com/fatihaltinci/mulakat-sorulari/assets/105079427/302ebf67-9308-41ee-9b50-9d3a0bca1400)
+
+Idempotent nedir?
+
+- Sonucu değiştirmeden defalarca uygulanabilen işlem. GET, PUT, DELETE idempotent iken POST idempotent değildir. POST kaynak tarafında değişikliğe sebep olacağı için idempotent değildir.
+
+Curl nedir?
+
+- Curl (Client URL) URL'lerin bağlanabilirliğini kontrol etmek ve veri transferi yapıp yapamayacağımızı test etmek için kullanılan bir araç. Çok sayıda protokolü destekler.
+
